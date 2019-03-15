@@ -1,0 +1,28 @@
+plugins {
+    id 'java'
+}
+
+group 'webscraper'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    // jsoup HTML parser library @ https://jsoup.org/
+    compile 'org.jsoup:jsoup:1.11.3'
+    // https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind
+    compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.0.1'
+    // https://mvnrepository.com/artifact/org.glassfish.jersey.core/jersey-client
+    compile group: 'org.glassfish.jersey.core', name: 'jersey-client', version: '2.6'
+    // https://mvnrepository.com/artifact/net.sourceforge.owlapi/owlapi-distribution
+    compile group: 'net.sourceforge.owlapi', name: 'owlapi-distribution', version: '5.1.9'
+    // https://mvnrepository.com/artifact/org.jdom/jdom2
+    compile group: 'org.jdom', name: 'jdom2', version: '2.0.6'
+
+
+}
